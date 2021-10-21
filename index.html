@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16. Write a JavaScript program to reverse the elements of a given array, you can not use Array.reverse() do it with loop.
+    </title>
+</head>
+<body>
+    <script>
+        var array1 = ["THIS","IS","NOT","A","LEAP","YEAR"];
+        var array2 = ["YEAR","LEAP","A","NOT","IS", "THIS"];
+        function reversearray(arr){
+            var newArray = [];
+            for(var i = arr.length - 1; i >= 0 ; i--){
+                newArray.push(arr[i]);
+            }
+           return newArray;
+        }
+        console.log(reversearray(array1));
+        console.log(reversearray(array2));
+    </script>
+</body>
+</html>
